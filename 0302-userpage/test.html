@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIYU WU | Front-end Portfolio</title>
+    <style>
+        :root {
+            /* 進階深藍綠色調組合 */
+            --primary-dark: #0f2c2e;    /* 深海綠 */
+            --primary-teal: #1a4d4f;    /* 核心藍綠 */
+            --accent-gold: #c5a358;     /* 點綴金（提升高級感） */
+            --bg-light: #f4f7f5;        /* 淺灰底色 */
+            --ui-overlay: rgba(255, 255, 255, 0.92);
+            --text-main: #2c3e50;
+            --text-muted: #546e7a;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            margin: 0;
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+        }
+
+        .section01 {
+            background: var(--primary-dark);
+            height: 100vh;
+            position: relative;
+            border-radius: 0 0 40px 40px; /* 僅底部圓角，更顯洗練 */
+            overflow: hidden;
+        }
+
+        /* 裝飾方塊：改為半透明與深色層次 */
+        .box01, .box04 {
+            position: absolute;
+            background-color: var(--primary-teal);
+            width: 250px;
+            height: 250px;
+            opacity: 0.5;
+        }
+
+        .box01 { border-radius: 0 0 100% 0; top: 0; left: 0; }
+        .box04 { border-radius: 100% 0 0 0; right: 0; bottom: 0; }
+
+        .userimg {
+            position: absolute;
+            background-color: #fff;
+            top: 60px;
+            left: 60px;
+            right: 60px;
+            bottom: 60px;
+            background-image: url('images/user01.avif');
+            background-position: center center;
+            background-size: cover;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .usertext {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            padding: 30px;
+            background-color: var(--ui-overlay);
+            border-left: 5px solid var(--accent-gold);
+            backdrop-filter: blur(10px);
+            transition: 0.5s;
+            max-width: 400px;
+        }
+
+        .usertext h1 {
+            font-size: 36px;
+            letter-spacing: 4px;
+            color: var(--primary-dark);
+            margin: 0 0 10px 0;
+        }
+
+        .usertext hr {
+            border: none;
+            height: 1px;
+            background-color: var(--accent-gold);
+            margin: 15px 0;
+            width: 50px;
+        }
+
+        .usertext h2 {
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--primary-teal);
+            margin-bottom: 10px;
+        }
+
+        .usertext p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .userimg:hover {
+            transform: scale(1.02);
+        }
+
+        /* Section 02: 專案展示區 */
+        .section02 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 100px 5%;
+            flex-wrap: wrap;
+        }
+
+        /* 圓形容器優化 */
+        .s02_box01, .s02_box02, .s02_box03, .s02_box04 {
+            background: #fff;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border: 1px solid rgba(26, 77, 79, 0.1);
+            text-decoration: none;
+        }
+
+        .s02_box01 a, .s02_box02 a, .s02_box03 a, .s02_box04 a {
+            color: var(--primary-teal);
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            display: block;
+            padding: 20px;
+        }
+
+        /* 懸停效果：深藍綠填滿 */
+        .s02_box01:hover, .s02_box02:hover, .s02_box03:hover, .s02_box04:hover {
+            transform: translateY(-10px);
+            background-color: var(--primary-teal);
+        }
+
+        .s02_box01:hover a, .s02_box02:hover a, .s02_box03:hover a, .s02_box04:hover a {
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="section01">
+        <div class="box01"></div>
+        <div class="box04"></div>
+        <div class="userimg">
+            <div class="usertext">
+                <h1>TIYU WU</h1>
+                <hr>
+                <h2>Senior Front-end Engineer</h2>
+                <p>致力於建構高效能、具美感的 Web 應用。擅長 React/Vue 框架，並專注於優化使用者互動路徑與跨瀏覽器兼容性解決方案。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section02">
+        <div class="s02_box01">
+            <a href="0223-product01.html" target="_blank">E-Commerce<br>平台架構開發</a>
+        </div>
+
+        <div class="s02_box02">
+            <a href="0209-product02.html" target="_blank">Interactive<br>數據視覺化</a>
+        </div>
+
+        <div class="s02_box03">
+            <a href="0223-product03.html" target="_blank">UI Library<br>組件庫封裝</a>
+        </div>
+
+        <div class="s02_box04">
+            <a href="0209-2-product04.html" target="_blank">Performance<br>網頁性能優化</a>
+        </div>
+    </div>
+</body>
+
+</html>

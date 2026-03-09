@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>§ 荒糖羽愛ㄉ神秘辰葆 §</title>
+    <style>
+        body::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        body::-webkit-scrollbar-track {
+            background: #c3e487;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background: rgb(26, 110, 40);
+            border-radius: 10px;
+        }
+
+        body {
+            background-color: #bee9db;
+            /* 製作圓點 */
+            background-image: radial-gradient(#ffffff 20%, transparent 20%);
+            /* 設定圓點的大小密度 */
+            background-size: 30px 30px;
+            cursor: url('https://cur.cursors-4u.net/symbols/sym-1/sym49.cur'), auto;
+            /* 經典滑鼠游標 (示意) */
+        }
+
+        .box01 {
+            width: 600px;
+            height: 600px;
+            background: linear-gradient(100deg, rgb(207, 241, 53), #f3f2f2, rgb(199, 206, 173));
+
+            margin-top: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 150px;
+
+            padding-top: 50px;
+            margin-left: 500px;
+            padding-right: auto;
+            padding-bottom: 50px;
+
+            box-sizing: border-box;
+            border-radius: 360px;
+            box-shadow: 10px 15px 5px 10px #527423b6;
+
+            color: rgb(19, 51, 11);
+            text-align: center;
+            padding-top: 150px;
+            padding-left: auto;
+            font-size: 100px;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: 2px;
+        }
+
+        .box01:hover {
+            background: linear-gradient(100deg, rgb(135, 158, 34), #b6b4b4, rgb(222, 230, 193));
+            transform:
+                scale(1.05) rotate(5deg) translateX(50px) translateY(50px);
+            transition: 0.1ms;
+        }
+
+        .h1-wrapper {
+            text-align: center;
+            /* 讓裡面的 h1 居中 */
+            width: 100%;
+            /* 佔滿全寬 */
+            margin-top: 50px;
+            /* 把原本 h1 的 margin 移到這裡 */
+
+        }
+
+        h1 {
+            /* 1. 讓它變成長方形框框的關鍵 */
+            display: inline-block;
+            /* 改用 inline-block 比較好控制間距 */
+            background-color: transparent;
+            /* 長方形的底色 */
+            border: 6px solid #072e52;
+            /* 新聞標題風格的粗外框 */
+            text-align: center;
+            margin-top: 50px;
+            color: #ebb917;
+            /* 文字顏色透明 */
+            -webkit-text-stroke: 2px #0fbeb0;
+            /* 只顯示外框線 */
+            font-weight: 999;
+            font-size: 100px;
+
+        }
+
+        /* 留言板大外框 */
+        .guestbook-container {
+            width: 600px;
+            /* 跟上面的 box01 一樣寬 */
+            background: rgba(255, 255, 255, 0.8);
+            /* 半透明白色背景 */
+            margin: 50px auto;
+            /* 上下距離 50px，左右置中 */
+            padding: 20px;
+            border: 3px double #7daa43;
+            /* 雙線邊框更有無名感 */
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gb-header {
+            text-align: center;
+            border-bottom: 2px dashed #99ffcf;
+            /* 虛線底線 */
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            color: #072e52;
+        }
+
+        /* 輸入區塊 */
+        .input-area {
+            background: #a8b6a9;
+            /* 淡粉紅底色 */
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .input-area .row {
+            margin-bottom: 10px;
+        }
+
+        .input-area label {
+            font-weight: bold;
+            color: #072e52;
+        }
+
+        .input-area input,
+        .input-area textarea {
+            width: 80%;
+            padding: 5px;
+            border: 1px solid #8c941d;
+            background: #fff;
+            border-radius: 5px;
+        }
+
+        /* 復古按鈕樣式 */
+        .input-area button {
+            background: #57b157;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 2px 2px 0px #147725;
+            /* 硬陰影 */
+        }
+
+        .input-area button:active {
+            transform: translate(2px, 2px);
+            box-shadow: none;
+        }
+
+        /* 留言列表 */
+        .comment-item {
+            display: flex;
+            padding: 15px 0;
+            border-bottom: 1px dashed #99ffcf;
+            /* 每則留言之間的虛線 */
+        }
+
+        /* 頭貼 */
+        .avatar img {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            background: #fff;
+            margin-right: 15px;
+        }
+
+        /* 留言內容 */
+        .content {
+            flex: 1;
+        }
+
+        .info {
+            font-size: 12px;
+            color: #244117;
+            margin-bottom: 5px;
+        }
+
+        .info .name {
+            color: #30ce10;
+            font-weight: bold;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .info .floor {
+            float: right;
+            color: #ccc;
+        }
+
+        /* 版主回覆樣式 */
+        .reply {
+            background: #f1f1f1;
+            font-size: 13px;
+            color: #555;
+            padding: 8px;
+            margin-top: 10px;
+            border-left: 3px solid #93d121;
+            /* 左邊那條粉紅色的線 */
+        }
+
+        .admin-name {
+            color: #398139;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h1-wrapper">
+        <h1>***愛の回憶錄***</h1>
+    </div>
+    <div class="box01">*** bi li bi li 魔法降臨 *** </div>
+    <p></p>
+
+    <script>
+    function addComment() {
+        // 1. 抓取使用者輸入的內容
+        var name = document.getElementById("nickname").value;
+        var msg = document.getElementById("message").value;
+        
+        // 檢查有沒有填寫
+        if(name == "" || msg == "") {
+            alert("欸！要記得填寫暱稱和留言喔！(ˋ^ˊ)〉");
+            return;
+        }
+
+        // 2. 取得現在時間
+        var date = new Date();
+        var timeString = date.getFullYear() + "/" + (date.getMonth()+1) + "/" + date.getDate();
+
+        // 3. 製作新的留言 HTML
+        // 隨機選一個頭貼種子
+        var randomSeed = Math.floor(Math.random() * 100);
+        
+        var newHtml = `
+            <div class="comment-item">
+                <div class="avatar">
+                    <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=${randomSeed}" alt="頭貼">
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <span class="name">${name}</span>
+                        <span class="time">${timeString} (剛才)</span>
+                        <span class="floor">New!</span>
+                    </div>
+                    <div class="text">${msg}</div>
+                </div>
+            </div>
+        `;
+
+        // 4. 插入到留言列表中
+        var list = document.getElementById("commentList");
+        // insertAdjacentHTML 可以把字串變成 HTML 元素插入
+        list.insertAdjacentHTML('afterbegin', newHtml); // 'afterbegin' 代表插在最上面
+
+        // 5. 清空輸入框
+        document.getElementById("nickname").value = "";
+        document.getElementById("message").value = "";
+    }
+</script>
+
+</body>
+
+
+<div class="guestbook-container">
+    <div class="gb-header">
+        <h3>★~ 訪客留言版 ~★</h3>
+        <span style="font-size: 12px; color: #666;">( 記得要推推才可以走喔！ )</span>
+    </div>
+
+    <div class="input-area">
+        <div class="row">
+            <label>暱稱：</label>
+            <input type="text" id="nickname" placeholder="路人甲">
+        </div>
+        <div class="row">
+            <label>留言：</label>
+            <textarea id="message" rows="3" placeholder="來灌水一下吧..."></textarea>
+        </div>
+        <button onclick="addComment()">送出留言</button>
+    </div>
+
+    <div class="comment-list" id="commentList">
+
+        <div class="comment-item">
+            <div class="avatar">
+                <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Felix" alt="頭貼">
+            </div>
+            <div class="content">
+                <div class="info">
+                    <span class="name">路過的鄉民</span>
+                    <span class="time">2006/08/30 14:20</span>
+                    <span class="floor">#1</span>
+                </div>
+                <div class="text">頭香！版主好久不見～網頁做得好漂亮喔！</div>
+
+                <div class="reply">
+                    <span class="admin-name">【版主回覆】：</span>
+                    謝謝你的支持 <(￣︶￣)>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</html>

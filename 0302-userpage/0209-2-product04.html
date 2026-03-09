@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html and css practice</title>
+    <style>
+        body {
+            background-color: #bee9db;
+            margin: 0;
+            padding: 20px;
+            }
+        .box01 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(180deg,rgb(239, 240, 224),#e0ce95);
+            /* 背景色 - 漸層 */
+            background-color: #E0EFEA;
+
+            margin-top: 50px;
+            /*外距*/
+            margin-left: 50px;
+            margin-bottom: 50px;
+
+            padding-top: 5px;
+            /*框內距離*/
+            padding-left: 20px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+
+            box-sizing: border-box;
+            /*固定大小*/
+            border-radius: 10px;
+            /*框圓角*/
+            box-shadow: 15px 10px 10px 0px rgba(124, 131, 127, 0.2);
+            /* 語法：水平偏移 垂直偏移 模糊距離 擴散距離 顏色 */
+
+            /*文字相關*/
+            color: rgb(22, 22, 22);
+            font-size: 24px;
+            font-weight: bolder;
+            line-height: 1.3;
+            letter-spacing: 2px;
+       }
+
+        .box02 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(180deg,#d9f1cf,#dfd7cb);
+            background-color: #2D4F42;
+
+            margin-top: 50px;
+            margin-left: 300px;
+            margin-bottom: 50px;
+
+            padding-left: 15px;
+            padding-top: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+
+            box-sizing: border-box;
+            border-radius: 10px;
+            border: 2px solid #fff;
+            /* 白邊框讓發光更明顯 */
+            box-shadow:
+                0 0 10px #fff,
+                /* 內層白光 */
+                0 0 20px #E0EFEA,
+                /* 中層主題色光 */
+                0 0 40px #E0EFEA;
+            /* 外層擴散光 */
+
+            color: rgb(22, 22, 22);
+            font-size: 24px;
+            font-weight: bolder;
+            line-height: 1.3;
+            letter-spacing: 2px;
+
+        }
+
+        .box03 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(180deg,#e9edf1,#98b7d3);
+            background-color: #D8C3A5;
+
+            margin-top: 50px;
+            margin-left: 550px;
+            margin-bottom: 50px;
+
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 15px 10px 10px 0px rgba(124, 131, 127, 0.2);
+
+            color:rgb(22, 22, 22);
+            font-size: 24px;
+            font-weight: bolder;
+            line-height: 1.3;
+            letter-spacing: 2px;
+            
+        }
+
+        .box04 {
+            width: 200px;
+            height: 200px;
+            background-color: #8E8D8A;
+
+            margin-top: 50px;
+            margin-left: 800px;
+            margin-bottom: 50px;
+
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow:
+                0 0 10px #fff,
+                0 0 20px #E0EFEA,
+                0 0 40px #E0EFEA;
+
+            color:rgb(22, 22, 22);
+            font-size: 24px;   
+            line-height: 1.3;
+            letter-spacing: 2px;
+        }
+
+        .box05 {
+            width: 200px;
+            height: 200px;
+            background-color: #A89F91;
+            
+            margin-top: 50px;
+            margin-left: 1150px;
+            margin-bottom: 50px;
+
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 15px 10px 10px 0px rgba(124, 131, 127, 0.2);
+
+            color: rgb(22, 22, 22);
+            line-height: 1.3;
+            font-size: 24px;
+            letter-spacing: 2px;
+
+        }
+
+        /* 鼠標互動 */
+        .box01:hover{
+            background: linear-gradient(180deg,rgb(196, 197, 182),#bdb185);   /* 鼠標移至上方變色 */
+            transform: 
+            scale(1.05)/* 鼠標移至上方變大 */ 
+            rotate(360deg)/* 鼠標移至上方轉角度 */
+            translateX(200px) /*鼠標移至上方後往橫向移動*/
+            translateY(240px);/*鼠標移至上方後往直向移動*/
+            transition: transform 1s ;
+        }
+
+        .box02:hover{
+            background: linear-gradient(180deg,#85947f,#dfd7cb);
+            transform:scale(1.05)rotate(360deg)translateX(200px)translateY(240px) ;
+            transition: transform 1.3s;
+        }
+
+        .box03:hover{
+            background: linear-gradient(180deg,#cbced1,#85a1b9);
+            transform:
+            scale(1.05)
+            rotate(360deg)
+            translateX(200px)
+            translateY(240px);
+            transition: transform 1.3S;
+        }
+
+        .box04:hover{
+            background: linear-gradient(180deg, #8E8D8A,#e6dfcd);
+            transform: 
+            scale(1.05) 
+            rotate(360deg)
+            translateX(200px)
+            translateY(240px);
+            transition: transform 1.3s;
+        }
+
+        .box05:hover{
+            background:linear-gradient(180deg, #a1e2c2,#91bbc5) ;
+            transform: 
+            scale(1.05)
+            rotate(360deg)
+            translateX(200px)
+            translateY(240px);
+            transition: transform 1.3s;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box01">
+        <p>酷炫寶貝來囉>_<*****</p>
+    </div>
+
+    <div class="box02">
+        <p>愛ㄉ魔法力量 bi bi bi</p>
+    </div>
+
+    <div class="box03">
+        <p>神秘朋朋咒語---**</p>
+    </div>
+
+    <div class="box04">
+        <p>10年後ㄉ治己讚讚讚!!</p>
+    </div>
+
+    <div class="box05">
+        <p>歷史總4驚人ㄉ相4ㄋ...</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+
+body{
+  font-family: "Dela Gothic One", sans-serif;
+}
+
+:root {
+
+    /* === [核心基礎色] === */
+    --chambray-50: #f8fafc;   /* 極淺背景 */
+    --chambray-100: #edf6ff;  /* (原mycolor10) 亞麻白 */
+    --chambray-200: #daedff;  /* (原mycolor11) 輕量單寧 */
+    --chambray-300: #b9d6f2;  /* 水洗藍 */
+    --chambray-400: #8ba9c4;  /* 霧霾藍 */
+    --chambray-500: #57697a;  /* (原mycolor08) 標準 Chambray 藍 */
+    --chambray-600: #4a5a69;  /* 經典單寧 */
+    --chambray-700: #3d4955;  /* (原mycolor09) 深邃藍 */
+    --chambray-800: #2c353d;  /* 炭黑藍 */
+    --chambray-900: #1a1f24;  /* 暗影藍 */
+
+    /* === [亞麻與大地配點色] === */
+    --linen-50: #fbfbf8;
+    --linen-100: #f1eac9;     /* (原mycolor01) 亞麻黃 */
+    --linen-200: #e2e7bd;     /* (原mycolor03) 苦艾綠 */
+    --linen-300: #d1d6ab;     /* 苔蘚綠 */
+    --linen-400: #abdfa4;     /* (原mycolor02) 嫩芽綠 */
+    --linen-500: #91b58a;     /* 橄欖綠灰 */
+    --sand-100: #f4f1e1;
+    --sand-500: #cec470;      /* (原mycolor05) 舊銅色 */
+    --sand-700: #9e944f;      /* 鏽金 */
+
+    /* === [暮色與陰影] === */
+    --twilight-100: #eef0f5;
+    --twilight-300: #c2c9d6;
+    --twilight-500: #5d5b7a;  /* (原mycolor12) 暮紫色 */
+    --twilight-700: #484661;
+    --twilight-900: #333147;
+
+    /* === [商業化文字與介面] === */
+    --ui-text-white: #ffffff;
+    --ui-text-main: #4d4e4e;  /* (原textcolor02) */
+    --ui-text-muted: #7a7a7a;
+    --ui-border-soft: #e2e8f0;
+    --ui-border-bold: #57697a;
+    --ui-success: #81c784;    /* 延伸自 mycolor02 */
+    --ui-error: #e57373;
+    --ui-overlay: rgba(61, 73, 85, 0.4);
+
+}

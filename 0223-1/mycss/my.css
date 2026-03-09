@@ -1,0 +1,19 @@
+/* 變數 */
+:root {
+    --mycolor01: #f1eac9;
+    --mycolor02: #abdfa4;
+    --mycolor03: #e2e7bd;
+    --mycolor04: rgb(211, 224, 153);
+    --mycolor05: #cec470;
+    --mycolor06: #c3c99a;
+    --mycolor07:rgb(166, 177, 121);
+    --mycolor07:#57607A;
+    --mycolor08:#57697a;
+    --mycolor09:#3d4955;
+    --mycolor10:#edf6ff;
+    --mycolor11:#daedff;
+    --mycolor12:#5d5b7a;
+
+    --textcolor01:#FFFFFF;
+    --textcolor02: rgb(77, 78, 78);
+}

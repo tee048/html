@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Design Concept</title>
+    <style>
+        body {
+            background-color: #f2f0eb; /* Le Labo 標誌性的淺米色底 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .box01 {
+            /* 調整寬高比例，商業設計較少使用正圓，建議微長方或圓角矩形 */
+            width: 500px;
+            height: 500px;
+
+            /* 背景：低彩度的大地色系 */
+            background: #fffcf7; 
+
+            /* 內距與排列 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+
+            /* 外框固定大小 */
+            box-sizing: border-box;
+
+            /* 外觀：微圓角比正圓更具現代品牌感 */
+            border-radius: 4px;
+            border: 1px solid #d1cec7; /* 細緻的邊框線 */
+
+            /* 陰影：改為柔和且大範圍的擴散，營造懸浮感 */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+            /* 文字相關：使用更專業的字體設定 */
+            color: #333230;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.8;
+            letter-spacing: 0.15em; /* 增加字距提升呼吸感 */
+
+            /* 設定過渡變化 */
+            cursor: pointer;
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        /* 游標移動變化 */
+        .box01:hover {
+            /* 背景轉為 Aesop 經典深色調 */
+            background: #3d3d3b; 
+            border-color: #3d3d3b;
+
+            /* 位移：捨棄大幅度旋轉，改為輕微上浮 */
+            transform: translateY(-8px);
+
+            /* 陰影加深但保持柔和 */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+            /* 字變亮，呈現對比 */
+            color: #efede8;
+
+            /* 字體間距微增 */
+            letter-spacing: 0.25em;
+        }
+
+        p {
+            margin: 0;
+            word-break: break-all;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box01">
+        <p>優雅氛圍<br>低調簡約</p>
+    </div>
+</body>
+
+</html>

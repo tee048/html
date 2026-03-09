@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ch-zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mycss.css">
+
+    <style>
+        .container {
+            background-color: var(--rz-bg-light);
+            margin: 30px auto;
+        }
+
+        .box01 {
+            background-color: var(--color-neutral-50);
+            width: 100%;
+            margin: 24px;
+            border-radius: 10%;
+            padding: 24px;
+            box-shadow: 1px 1px 3px var(--color-neutral-900);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>CH3. Boostrap 文字相關</h1>
+        <!-- 與原本的html h1~h5規則一樣 bs將h1~h5定義為class="h1~h5" -->
+        <h1>1. 字型大小 h1 ~ h5</h1>
+        <div class="box01">
+            <h1>可是小時近日光臨環。</h1>
+            <h2>可是小時近日光臨環。</h2>
+            <h3>可是小時近日光臨環。</h3>
+            <h4>可是小時近日光臨環。</h4>
+            <h5>可是小時近日光臨環。</h5>
+        </div>
+
+
+
+        <h1>2.class="h1" ~ class="h5"</h1>
+        <div class="box01">
+            <div class="h1">可是小時近日光臨環。</div>
+            <div class="h2">可是小時近日光臨環。</div>
+            <div class="h3">可是小時近日光臨環。</div>
+            <div class="h4">可是小時近日光臨環。</div>
+            <div class="h5">可是小時近日光臨環。</div>
+        </div>
+
+
+
+        <h1>2.dispalay-1 ~ display-6</h1>
+        <!-- 標題大小 1~6 -->
+        <div class="box01">
+            <div class="display-1">這是一個大標題</div>
+            <div class="display-2">這是一個大標題</div>
+            <div class="display-3">這是一個大標題</div>
+            <div class="display-4">這是一個大標題</div>
+            <div class="display-5">這是一個大標題</div>
+        </div>
+
+
+
+        <h1>3.文本元素</h1>
+        <div class="box01">
+            <p><mark>看起來，一週一流太。</mark></p>
+            <p><del>看起來，一週一流太。</del></p>
+            <p><s>看起來，一週一流太。</s></p>
+            <p><ins>看起來，一週一流太。</ins></p>
+            <p><u>看起來，一週一流太。</u></p>
+            <p><small>看起來，一週一流太。</small></p>
+            <p><strong>看起來，一週一流太。</strong></p>
+            <p><em>看起來，一週一流太。</em></p>
+
+        </div>
+
+
+
+        <h1>4. text-start, text-center , text-end</h1>
+        <!-- 文字排列位置 -->
+
+        <div class="box01">
+            <!-- 置左 -->
+            <p class="text-start">改造病人規範崇拜圖。</p>
+            <!-- 置中 -->
+            <p class="text-center">改造病人規範崇拜圖。</p>
+            <!-- 置右 -->
+            <p class="text-end">改造病人規範崇拜圖。</p>
+        </div>
+
+
+
+        <h1>5. list-unstyled</h1>
+        <!-- 清單清除前面列點 -->
+
+        <div class="box01">
+            <ul class=list-unstyled>
+                <li>list-unstyled</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. derit. Voluptatem, ut corporis.
+                </li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qurum soluta ex aperiam, omnis veritatis
+                    neque aut atque.</li>
+
+                <!-- 未加語法的清單仍顯示列點 -->
+                <ul>
+                    <li>Lorem ipsum, dng elit. Vnostrum.</li>
+                    <li>Lornsectetur, adipisicing elit. Cumque, eveniet.</li>
+                </ul>
+
+            </ul>
+        </div>
+
+
+
+        <h1>6.list-inline</h1>
+        <!--將選單並排顯示 -->
+
+        <div class="box01">
+            <ul class="list-inline">
+                <li class="list-inline-item">選單01</li>
+                <li class="list-inline-item">選單02</li>
+                <li class="list-inline-item">選單03</li>
+                <li class="list-inline-item">選單04</li>
+            </ul>
+        </div>
+
+
+        <h1>7. text-truncate</h1>
+        <!-- 文字超過框尺寸後，以 ... 顯示 -->
+        <div class="box01">
+            <p class="text-truncate">
+                宣佈申請具體歷史，第二章為你大家都對於，最好沒事航空回到基礎上聯盟巨大包括生成運作，各項可是，好看親愛的，顧問有很多，具體女孩將來精選些什麼發言等等開口女孩子重複試題，畢竟注重父親配合期間請求，人家阿摩斯激情爭取從此無奈社會發出培養醫院商城習慣軍事，失望設置本人房屋沒有任何還是幹什麼後來降低通訊中壢寵物只不過，觀點批發收入學習，日記意見。
+            </p>
+        </div>
+
+
+
+        <h1>8.float-start , float-end</h1>
+        <div class="box01">
+            <!-- 文繞圖 文字繞前面 -->
+            <img src="684-300x200.jpg" width="300" class="float-start">
+            <p>不管毫不程式感情集團世界版權所有警察任務公告，聊天新技術服飾高中緊急情緒感情引用有權執法驚訝，自行到我信心在我將來價格成熟開展，全面有人，給你當天，金錢深深討論版權螢幕告訴我主管年度成為，支付口氣機制無線互相門口，一遍妹妹，持續新手不行你想註冊時間需要暫無關西提問，即將以下等方面團體材料學歷，原來指揮供求事務醫學創建信心原則，見過無線，如此高效我真通過成員街道加上不限則是現場綠色不可後來，爆炸無。
+
+            </p>
+        </div>
+
+        <div class="box01">
+            <!-- 文繞圖 文字繞前面 -->
+            <img src="684-300x200.jpg" width="300" class="float-end">
+            <p>不管毫不程式感情集團世界版權所有警察任務公告，聊天新技術服飾高中緊急情緒感情引用有權執法驚訝，自行到我信心在我將來價格成熟開展，全面有人，給你當天，金錢深深討論版權螢幕告訴我主管年度成為，支付口氣機制無線互相門口，一遍妹妹，持續新手不行你想註冊時間需要暫無關西提問，即將以下等方面團體材料學歷，原來指揮供求事務醫學創建信心原則，見過無線，如此高效我真通過成員街道加上不限則是現場綠色不可後來，爆炸無。
+            </p>
+        </div>
+
+
+
+        <h1>9.img-fluid 圖片不隨視窗縮放超過最大尺寸 </h1>
+        <!-- 視窗放大超過圖片原有尺寸後，圖片仍然固定原始尺寸，但縮小可跟著縮小 -->
+        <div class="box01">
+            <img src="684-300x200.jpg" class="img-fluid">
+        </div>
+
+
+        <h1>9.img-thumbnail 圖片不隨視窗縮放超過最大尺寸 </h1>
+        <!-- 視窗放大超過圖片原有尺寸後，圖片仍然固定原始尺寸，但縮小可跟著縮小 -->
+        <div class="box01">
+            <img src="684-300x200.jpg" class="img-thumbnail">
+        </div>
+
+        
+        <h1>9. d-block mx-auto</h1>
+        <!-- 圖片置中 -->
+        <div class="box01">
+            <img src="684-300x200.jpg" class="d-block mx-auto">
+        </div>
+
+    </div>
+
+
+
+
+    <script src="../javascript/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

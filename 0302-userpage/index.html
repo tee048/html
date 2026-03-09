@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIYU WU.Resume</title>
+    <link rel="stylesheet" href="mycss.css">
+    <style>
+
+        body{
+        background-color: var(--bg-light);}
+
+        .section01 {
+            background: var(--chambray-500);
+            height: 100vh;
+            position: relative;
+            border-radius: 40px;
+        }
+
+        .box01,
+        .box04 {
+            position: absolute;
+            background-color: var(--chambray-400);
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .box01 {
+            border-radius: 40px 0 0 0;
+        }
+
+        .box04 {
+            right: 0;
+            bottom: 0;
+            border-radius: 0 0 40px 0;
+
+        }
+
+        .userimg {
+            position: absolute;
+            background-color: #fff;
+            top: 50px;
+            left: 50px;
+            right: 50px;
+            bottom: 50px;
+            /* 背景相關 */
+            background-image: url(images/user01.avif);
+            background-position: center center;
+            background-size: cover;
+            border-radius: 20px;
+            box-shadow: 4px 4px 10px var(--chambray-800);
+            transition: 0.5s;
+
+        }
+
+        .usertext {
+            position: absolute;
+            top: 85%;
+            left: 85%;
+            transform: translate(-85%, -85%);
+            padding: 15px;
+            background-color: var(--ui-overlay);
+            transition: 0.5s;
+            
+
+            h1 {
+                font-size: 40px;
+                color: var(--ui-text-main);
+                margin: 0;
+                transition: 0.5s;
+
+            }
+
+            hr {
+                border: 1px solid var(--ui-border-bold);
+                margin: 0;
+                transition: 0.5s;
+
+            }
+
+            h2 {
+                font-size: 25px;
+                color: var(--ui-text-main);
+                margin: 0;
+                transition: 0.5s;
+
+            }
+
+            p {
+                font-size: 18px;
+                color: var(--ui-text-main);
+                margin: 0;
+                transition: 0.5s;
+
+            }
+
+        }
+
+
+        .userimg:hover {
+            transform: scale(1.03);
+        }
+
+        .usertext:hover h1,
+        .usertext:hover h2,
+        .usertext:hover p {
+            color: var(--chambray-200);
+        }
+
+        .section02 {
+            position: relative;
+
+        }
+
+        .s02_box01 {
+            background: var(--linen-300);
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 250px;
+            margin-top: 50px;
+            margin-left: 5%;
+            transition: 0.4s;
+            box-shadow: 0 10px 10px var(--chambray-800);
+
+        }
+
+        .s02_box02 {
+            background: var(--linen-300);
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 250px;
+            margin-top: 50px;
+            margin-left: 35%;
+            transition: 0.4s;
+            box-shadow: 0 10px 10px var(--chambray-800);
+        }
+
+        .s02_box03 {
+            background: var(--linen-300);
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 250px;
+            margin-top: 50px;
+            margin-left: 65%;
+            transition: 0.4s;
+            box-shadow: 0 10px 10px var(--chambray-800);
+        }
+
+        .s02_box04 {
+            background: var(--linen-300);
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 250px;
+            margin-top: 50px;
+            margin-left: 95%;
+            transition: 0.4s;
+            box-shadow: 0 10px 10px var(--chambray-800);
+        }
+
+        .s02_box01 a,
+        .s02_box02 a,
+        .s02_box03 a,
+        .s02_box04 a {
+            color: var(--ui-text-main);
+            font-size: 18px;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+
+        .s02_box01:hover,
+        .s02_box02:hover,
+        .s02_box03:hover,
+        .s02_box04:hover {
+            transform: scale(1.02);
+            background-color: var(--sand-500);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section01">
+        <div class="box01"></div>
+        <div class="box02"></div>
+        <div class="box03"></div>
+        <div class="box04"></div>
+        <div class="box05"></div>
+        <div class="userimg">
+            <div class="usertext">
+                <h1>TIYU WU</h1>
+                <hr>
+                <h2>前端工程師</h2>
+                <p>專注於網頁開發與設計，熱衷於創造優質的使用者體驗。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section02">
+        <div class="s02_box01">
+            <a href="0306-1.html" target="_blank">prodoct01</a>
+        </div>
+
+        <div class="s02_box02">
+            <a href="0209-product02.html" target="_blank">prodoct02</a>
+        </div>
+
+        <div class="s02_box03">
+            <a href="20260306-ex02-1.html" target="_blank">prodoct03</a>
+        </div>
+
+        <div class="s02_box04">
+            <a href="0209-2-product04.html" target="_blank">prodoct04</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

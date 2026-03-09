@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS 複習!</title>
+    <link rel="stylesheet" href="mycss/my.css">
+    <link rel="stylesheet" href="/mycss/ai.css">
+
+
+    <style>
+        .title-group {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .title01,
+        .title02,
+        .title03 {
+            width: 100px;
+            height: 35px;
+            /* 稍微增加高度讓文字更有呼吸感 */
+            background-color: var(--twilight-100);
+            /* 使用較淺的 Chambray 亞麻色 */
+
+            /* --- 自動置中 --- */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: var(--chambray-700);
+            font-size: 14px;
+            /* 商業導覽字體不宜過大，14-16px 最專業 */
+            text-transform: uppercase;
+            /* 英文轉大寫更有品牌感 */
+            letter-spacing: 2px;
+            border-radius: 2px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+
+        .box-group {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .box01 {
+
+            /* 寬高 */
+            width: 200px;
+            height: 200px;
+
+            /* 背景˙漸層 */
+            background: linear-gradient(120deg, var(--mycolor03), var(--mycolor04));
+
+            /* 外距 */
+            margin-top: 30px;
+            margin-left: 30px;
+
+            /* 內距 */
+            padding: 20px;
+
+
+            /* 外框固定大小 */
+            box-sizing: border-box;
+
+            /* 外觀 */
+            border-radius: 250px;
+            /* 陰影：左右寬度(正負值)、上下寬度、模糊度、厚度、顏色 */
+            box-shadow: 1px 1px 3px 1px var(--chambray-800);
+
+            /* 文字相關 */
+            color: var(--textcolor02);
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 1.5;
+            letter-spacing: 6px;
+
+            /* 設定hover變化時間 */
+            transition:
+                transform 0.3s,
+                box-shadow 0.5s,
+                color 0.5s,
+                letter-spacing 0.5s;
+        }
+
+        .box02 {
+            /* 寬高 */
+            width: 200px;
+            height: 200px;
+
+            /* 背景˙漸層 */
+            background: linear-gradient(120deg, var(--mycolor03), var(--mycolor04));
+
+            /* 外距 */
+            margin-top: 30px;
+            margin-left: 30px;
+
+            /* 內距 */
+            padding: 20px;
+
+            /* 外框固定大小 */
+            box-sizing: border-box;
+
+            /* 外觀 */
+            border-radius: 100px;
+            /* 陰影：左右寬度(正負值)、上下寬度、模糊度、厚度、顏色 */
+            box-shadow: 1px 1px 3px 1px var(--twilight-700);
+
+            /* 文字相關 */
+            color: var(--textcolor02);
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 1.5;
+            letter-spacing: 6px;
+
+            /* 設定hover變化時間 */
+            transition:
+                transform 0.3s,
+                box-shadow 0.5s,
+                color 0.5s,
+                letter-spacing 0.5s;
+        }
+
+        /* 游標移動變化 */
+        .title01:hover {
+            background-color: var(--twilight-500);
+            transform: translateX(5px) translateY(-5px) scale(1.05) rotate(0deg);
+            box-shadow: 1px -1px 5px 0px var(--textcolor02);
+            color: #FFFFFF;
+        }
+
+        .title02:hover {
+            background-color: var(--twilight-500);
+            transform: translateX(5px) translateY(-5px) scale(1.05) rotate(0deg);
+            box-shadow: 1px -1px 5px 0px var(--textcolor02);
+            color: #FFFFFF;
+        }
+
+        .title03:hover {
+            background-color: var(--twilight-500);
+            transform: translateX(5px) translateY(-5px) scale(1.05) rotate(0deg);
+            box-shadow: 1px -1px 5px 0px var(--textcolor02);
+            color: #FFFFFF;
+        }
+
+        .box01:hover {
+            /* 背景˙漸層 */
+            background: linear-gradient(120deg, var(--mycolor06), var(--mycolor07));
+
+            /* 位移 左右 上下 放大 旋轉*/
+            transform: translateX(10px) translateY(-10px) scale(1.05) rotate(-10deg);
+
+
+            /* 陰影加深 */
+            box-shadow: 5px -5px 12px 2px var(--textcolor02);
+
+            /* 字變亮 */
+            color: #FFFFFF;
+
+            /* 字體間距 */
+            letter-spacing: 7px;
+            line-height: 1.3;
+
+        }
+
+        .box02:hover {
+            /* 背景˙漸層 */
+            background: linear-gradient(120deg, var(--mycolor06), var(--mycolor07));
+
+            /* 位移 左右 上下 放大 旋轉*/
+            transform: translateX(10px) translateY(-10px) scale(1.05) rotate(-10deg);
+
+
+            /* 陰影加深 */
+            box-shadow: 5px -5px 12px 2px var(--textcolor02);
+
+            /* 字變亮 */
+            color: var(--textcolor01);
+
+            /* 字體間距 */
+            letter-spacing: 7px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title-group">
+        <div class="title01">home</div>
+        <div class="title02">search</div>
+        <div class="title03">sign in</div>
+    </div>
+
+   <img src="thaihand.jpg" alt="">
+
+    <div class="box-group">
+        <div class="box01">
+        <p>join us </p>
+        <p>加入我們</p></div>
+    <div class="box02">
+        <p>about us</p>
+        <p>關於我們</p>
+    </div>
+
+</body>
+
+</html>
