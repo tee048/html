@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch.5 表格(tabble)</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mycss.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- 表格，標題列 thead > 同一列 tr >同列的一格 th -->
+        <div class="display-1 text-center">ch.5 表格(tabble)</div>
+        <!-- 
+        table 表格
+        table-striped 斑馬紋效果，橫列呈現「一深一淺」的交替背景色
+        table-bordered 完整框線
+        table-hover 鼠標移動變化
+        table-sm 將表格變小
+         -->
+        <table class="table table-striped table-bordered table-hover table-sm">
+
+            <!-- 將表格上色 -->
+            <!-- 亮一點的顏色 bg-XX -->
+
+            <thead class="table-dark">
+                <tr>
+                    <th>編號</th>
+                    <th>品名</th>
+                    <th>價格</th>
+                    <th>數量</th>
+                    <th>備註</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="table-active">
+                    <td>001</td>
+                    <td>美式</td>
+                    <td>70</td>
+                    <td>1</td>
+                    <td>無糖少冰</td>
+                </tr>
+
+                <tr class="table-default">
+                    <td>002</td>
+                    <td>拿鐵</td>
+                    <td>100</td>
+                    <td>1</td>
+                    <td>微糖微冰</td>
+                </tr>
+
+                <tr class="table-primary">
+                    <td>003</td>
+                    <td>奶茶</td>
+                    <td>90</td>
+                    <td>1</td>
+                    <td>半糖正常冰</td>
+                </tr>
+
+                <tr class="table-secondary">
+                    <td>004</td>
+                    <td>紅茶</td>
+                    <td>45</td>
+                    <td>1</td>
+                    <td>半糖正常冰</td>
+                </tr>
+
+                <tr class="table-success">
+                    <td>005</td>
+                    <td>綠茶</td>
+                    <td>45</td>
+                    <td>1</td>
+                    <td>無糖正常冰</td>
+                </tr>
+
+                <tr class="bg-danger">
+                    <td>006</td>
+                    <td>烏龍</td>
+                    <td>50</td>
+                    <td>1</td>
+                    <td>無糖少冰</td>
+                </tr>
+
+                <tr class="table-warning">
+                    <td>007</td>
+                    <td>豆花</td>
+                    <td>45</td>
+                    <td>1</td>
+                    <td>*</td>
+                </tr>
+
+                <tr class="table-info">
+                    <td>008</td>
+                    <td>剉冰</td>
+                    <td>60</td>
+                    <td>1</td>
+                    <td class="bg-danger">加煉乳</td>
+                </tr>
+
+                <tr class="bg-info">
+                    <td>009</td>
+                    <td>杏仁豆腐</td>
+                    <td>50</td>
+                    <td>1</td>
+                    <td>*</td>
+                </tr>
+
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="../javascript/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
